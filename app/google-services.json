@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "761571523688",
+    "project_id": "kotprog-230f2",
+    "storage_bucket": "kotprog-230f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761571523688:android:87547593c6f2bed2d28fdd",
+        "android_client_info": {
+          "package_name": "com.example.kotprog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761571523688-qlm89dg8nh9ci10stajkhnb3v1tfpfcj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kotprog",
+            "certificate_hash": "16faf4ee1243601111ba0ca85782dae6f591a386"
+          }
+        },
+        {
+          "client_id": "761571523688-uaovh4vbbf3pg8570edj94ua5k0vgv42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPCT4sD6mqLVHgOAaII5gk98QrV1VsUm0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761571523688-uaovh4vbbf3pg8570edj94ua5k0vgv42.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

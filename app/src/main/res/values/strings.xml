@@ -1,0 +1,242 @@
+<resources>
+    <string name="app_name">Kotprog</string>
+    <string name="felhnev">Felhasználónév</string>
+    <string name="jelsz">Jelszó</string>
+    <string name="bejel">Bejelentkezés</string>
+    <string name="reg">Regisztráció</string>
+    <string name="megsem">Mégsem</string>
+    <string name="jelszism">Jelszó Megerősítése</string>
+    <string name="emailc">Email cím</string>
+    <string name="hibaUresMezo">Az összes mezőt ki kell tölteni</string>
+    <string name="hibaJelszEgyez">A jelszónak és a jelszó megerősítésének meg kell egyezznie!</string>
+    <string name="regFail">A regisztráció sikertelen</string>
+    <string name="loginFail">A belépés sikertelen</string>
+    <string name="bejel_vendeg">Bejelentkezés vendégként</string>
+    <string name="hirek">Hírek</string>
+    <string name="tabella">Tabella</string>
+    <string name="meccs">Meccsek</string>
+    <string name="kiemMeccs">Kiemelt Meccsek</string>
+    <string name="csapatom">Csapatom</string>
+    <string name="kijel">Kijelentjezés</string>
+
+    <string-array name="csapat_nev_spinner">
+        <item>Válassza ki a kedvenc csapatát</item>
+        <item>Real Madrid</item>
+        <item>Barcelona</item>
+        <item>Atlético Madrid</item>
+        <item>Sevilla</item>
+        <item>Real Betis</item>
+        <item>Real Sociedad</item>
+        <item>Villarreal</item>
+        <item>Bilbao</item>
+        <item>Valencia</item>
+        <item>Osasuna</item>
+        <item>Celta Vigo</item>
+        <item>Espanyol</item>
+        <item>Rayo Vallecano</item>
+        <item>Getafe</item>
+        <item>Elche</item>
+        <item>Granada</item>
+        <item>Cádiz</item>
+        <item>Mallorca</item>
+        <item>Levante</item>
+        <item>Alaves</item>
+    </string-array>
+
+    <string-array name="csapat_nev">
+        <item>Real Madrid</item>
+        <item>Barcelona</item>
+        <item>Atlético Madrid</item>
+        <item>Sevilla</item>
+        <item>Real Betis</item>
+        <item>Real Sociedad</item>
+        <item>Villarreal</item>
+        <item>Bilbao</item>
+        <item>Valencia</item>
+        <item>Osasuna</item>
+        <item>Celta Vigo</item>
+        <item>Espanyol</item>
+        <item>Rayo Vallecano</item>
+        <item>Getafe</item>
+        <item>Elche</item>
+        <item>Granada</item>
+        <item>Cádiz</item>
+        <item>Mallorca</item>
+        <item>Levante</item>
+        <item>Alaves</item>
+    </string-array>
+
+    <string-array name="csapat_stadion">
+        <item>Estadio Santiago Bernabéu</item>
+        <item>Camp Nou</item>
+        <item>Wanda Metropolitano</item>
+        <item>Ramón Sanchez-Pizjuán</item>
+        <item>Estadio Benito Villamarín</item>
+        <item>Reale Arena</item>
+        <item>Estadio de la Cerámica</item>
+        <item>Estadio San Mamés</item>
+        <item>Camp de Mestalla</item>
+        <item>Estadio El Sadar</item>
+        <item>Estadio ABANCA Baladíos</item>
+        <item>RCDE Stadium</item>
+        <item>Estadio de Vallecas</item>
+        <item>Coliseum Alfonso Pérez</item>
+        <item>Estadio Martínez Valero</item>
+        <item>Nuevo Los Cármenes</item>
+        <item>Estadio Nuevo Mirandilla</item>
+        <item>Visit Mallorca Estadi</item>
+        <item>Estadio Ciutat de Valéncia</item>
+        <item>Mendizorroza</item>
+    </string-array>
+
+    <string-array name="csapat_edzo">
+        <item>Carlo Ancelotti</item>
+        <item>Xavi</item>
+        <item>Diego Simeone</item>
+        <item>Julen Lopetegui</item>
+        <item>Manuel Pellegrini</item>
+        <item>Imanol Alguacil</item>
+        <item>Unai Emery</item>
+        <item>Marcelino</item>
+        <item>José Bordalás</item>
+        <item>Jagoba Arrasate</item>
+        <item>Eduardo Coudet</item>
+        <item>Vicente Moreno</item>
+        <item>Andoni Iraola</item>
+        <item>Quique Sánchez Flores</item>
+        <item>Francisco</item>
+        <item>Aitor Karanka</item>
+        <item>Sergio González</item>
+        <item>Javier Aguirre</item>
+        <item>Alessio Lisci</item>
+        <item>Julio Velázquez</item>
+    </string-array>
+
+    <string-array name="csapat_alapitas">
+        <item>1902</item>
+        <item>1899</item>
+        <item>1903</item>
+        <item>1905</item>
+        <item>1907</item>
+        <item>1909</item>
+        <item>1923</item>
+        <item>1898</item>
+        <item>1919</item>
+        <item>1920</item>
+        <item>1923</item>
+        <item>1900</item>
+        <item>1924</item>
+        <item>1983</item>
+        <item>1923</item>
+        <item>1931</item>
+        <item>1910</item>
+        <item>1916</item>
+        <item>1909</item>
+        <item>1921</item>
+    </string-array>
+
+    <array name="csapat_cimer">
+        <item>@drawable/real</item>
+        <item>@drawable/barca</item>
+        <item>@drawable/atletico</item>
+        <item>@drawable/sevilla</item>
+        <item>@drawable/betis</item>
+        <item>@drawable/sociedad</item>
+        <item>@drawable/villareal</item>
+        <item>@drawable/bilbao</item>
+        <item>@drawable/valencia</item>
+        <item>@drawable/osasuna</item>
+        <item>@drawable/celta</item>
+        <item>@drawable/espanol</item>
+        <item>@drawable/rayo</item>
+        <item>@drawable/getafe</item>
+        <item>@drawable/elche</item>
+        <item>@drawable/granada</item>
+        <item>@drawable/cadiz</item>
+        <item>@drawable/mallorca</item>
+        <item>@drawable/levante</item>
+        <item>@drawable/alaves</item>
+    </array>
+
+    <string-array name="hirek_cim">
+        <item>A Barcelona négy góllal nyert a Real Madrid otthonában!</item>
+        <item>Edzőváltás a kieső helyre kerülő Mallorcánál</item>
+        <item>Real Madrid: Ancelotti koronavírusos, a fia helyettesítheti</item>
+        <item>Hat mérkőzés után először nyert a Getafe</item>
+        <item>Legyőzte a Villarrealt, elmozdult a 20. helyről a Levante</item>
+    </string-array>
+
+    <string-array name="hirek_hir">
+        <item>Az egyre jobb és összeszedettebb Barcelonát fogadta a jó formában lévő, de a vezérét és legjobbját, Karim Benzemát nélkülöző Real Madrid, természetesen technikai telt ház előtt, és világszerte százmilliók követték figyelemmel a nagy rangadót.
+Carlo Ancelotti és legénysége arra készült, hogy sorozatban hatodszor nyerjen a Barca ellen, az olasz mester pedig elővette a totális futballt az első félidőben: Luka Modric hol szűrőt, hol egy szem középcsatárt játszott, néha felhúzódott mellé Toni Kroos, a középső védő David Alaba pedig a letámadáskor feltűnt olykor a bal szélen, de az ellenfél térfelén; hol Nacho, hol Federico Valverde tűnt fel az ellenfél 16-osa előtt karmesterként.
+Valverde kihagyott egy helyzetet éppen a 16-osról, a másik oldalon Pierre-Emerick Aubameyang az ötös elől nem tudott túljárni Thibaut Courtois eszén, picit távolabbról Ousmane Dembélé sem, Ferran Torres lövésénél pedig zseniális becsúszással mentett Casemiro.
+Veszélyesebb volt tehát a Barcelona, és a 29. percben gólt is szerzett: Dembélé és Pierre-Emerick Aubameyang verte meg a hazai védőket, Courtois tehetetlen volt. Amikor Vinícius Júnior ziccerben gyakorlatilag kibuktatta saját magát, kiderült: ez nem a Real Madrid napja. A brazil támadó percekig reklamált, Dembélé közben kiosztotta a második gólpasszát, szögletét Ronald Araújo fejelte a kapuba, mert Alaba és Éder Militao ezúttal sem állt a helyzet magaslatán.
+Beállt a szünetben Mariano Díaz és Eduardo Camavinga, de ettől a Real még rosszabb lett: Pierre-Emerick Aubameyang sarokkal adott gólpasszt Ferran Torresnek, majd nagyon szemtelen gólt szerzett, Ferran Torres asszisztjából.</item>
+        <item>A trénernek azért kellett távoznia, mert hétvégén az együttes sorozatban hatodik vereségét szenvedte el a spanyol bajnokságban, így a kieső zónába esett vissza.
+Garcíának ez volt a második idénye a csapat kispadján, az elsőben a másodosztályból az élvonalba juttatta az együttest. Utódjáról egyelőre nem döntöttek.
+A Real Mallorca 29 forduló után 26 pontjával a 18. helyen áll.</item>
+        <item>A Marca szerint a 62 esztendős szakember kihagyhatja a szombati, Celta Vigo elleni bajnoki mérkőzést, s nem kizárt, hogy a jövő szerdai, Chelsea elleni Bajnokok Ligája-találkozón sem lehet ott. Mindkétszer idegenben lép pályára a Real Madrid.
+Ha Ancelotti nem lehet ott a meccseken, 32 éves fia, Davide helyettesítheti, aki 2012 óta rendre feladatot kap a szakmai stábban édesapja csapatainál.</item>
+        <item>A gól nélküli első félidőt követően a Getafe nagy lehetőséghez jutott a 65. percben, mert Franco Russo – az argentin védő megkapta a második sárga lapját, így emberhátrányba került a Mallorca – kezezése után büntetőhöz jutott. A La Liga jelenlegi idényében 14 gólnál járó török Enes Ünal lövését azonban hárította Sergio Rico.
+A 82. percben viszont már betalált a házigazda, a szünetben beálló Borja Mayoral volt eredményes, gólja győzelmet ért csapatának. 1–0
+A Getafe hat mérkőzés után először nyert, míg a Mallorca sorozatban hetedszer kapott ki.</item>
+        <item>A valenciai gárda mindkét gólját José Luis Morales, a házi góllövőlista éllovasa szerezte, aki immár kilenc találatnál jár a La Liga mostani idényében. A Levante hosszú idő után először nem utolsó a spanyol bajnokságban.
+A Bayern München elleni Bajnokok Ligája-negyeddöntőre készülő Villarreal a legutóbbi négy bajnoki meccséből hármat elveszített.</item>
+    </string-array>
+
+    <array name="hirek_kep">
+        <item>@drawable/barcavsreal</item>
+        <item>@drawable/mallorca_edzovaltas</item>
+        <item>@drawable/ancelotti</item>
+        <item>@drawable/getafe_win</item>
+        <item>@drawable/levante_win</item>
+    </array>
+
+    <integer-array name="tabella_pontok">
+        <item>78</item>
+        <item>63</item>
+        <item>63</item>
+        <item>61</item>
+        <item>57</item>
+        <item>55</item>
+        <item>52</item>
+        <item>48</item>
+        <item>44</item>
+        <item>42</item>
+        <item>40</item>
+        <item>39</item>
+        <item>39</item>
+        <item>38</item>
+        <item>35</item>
+        <item>32</item>
+        <item>31</item>
+        <item>30</item>
+        <item>25</item>
+        <item>25</item>
+    </integer-array>
+
+    <string-array name="tabella_csapat">
+        <item>Real Madrid</item>
+        <item>Barcelona</item>
+        <item>Sevilla</item>
+        <item>Atlético Madrid</item>
+        <item>Real Betis</item>
+        <item>Real Sociedad</item>
+        <item>Villarreal</item>
+        <item>Bilbao</item>
+        <item>Osasuna</item>
+        <item>Valencia</item>
+        <item>Rayo Vallecano</item>
+        <item>Celta Vigo</item>
+        <item>Espanyol</item>
+        <item>Elche</item>
+        <item>Getafe</item>
+        <item>Mallorca</item>
+        <item>Cádiz</item>
+        <item>Granada</item>
+        <item>Levante</item>
+        <item>Alaves</item>
+    </string-array>
+
+
+</resources>

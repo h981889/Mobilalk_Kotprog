@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lila"
+    tools:context=".Activity.FelhasznaloActivity">
+
+    <TextView
+        android:id="@+id/textViewCimFelhasznalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/alapMargin"
+        android:fontFamily="sans-serif-black"
+        android:text="Felhasználó kezelése"
+        android:textAllCaps="true"
+        android:textColor="@color/vilagoskek"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextFelhNevFelhasznalo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextFelhNevFelhasznalo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/alapMargin"
+        android:ems="10"
+        android:hint="@string/felhnev"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/vilagoskek"
+        android:textColorHint="@color/vilagoskek"
+        app:layout_constraintBottom_toTopOf="@+id/editTextJelszoFelhasznalo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCimFelhasznalo" />
+
+    <EditText
+        android:id="@+id/editTextJelszoFelhasznalo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/alapMargin"
+        android:ems="10"
+        android:hint="@string/jelsz"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/vilagoskek"
+        android:textColorHint="@color/vilagoskek"
+        app:layout_constraintBottom_toTopOf="@+id/buttonModositasFelhasznalo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFelhNevFelhasznalo" />
+
+    <Button
+        android:id="@+id/buttonModositasFelhasznalo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/alapMargin"
+        android:onClick="onClickModositasFelhasznalo"
+        android:text="Felhasználó Módosításítása"
+        android:textColor="@color/vilagoskek"
+        app:backgroundTint="@color/bordo"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTorlesFelhasznalo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextJelszoFelhasznalo" />
+
+    <Button
+        android:id="@+id/buttonTorlesFelhasznalo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/alapMargin"
+        android:onClick="onClickTorlesFelhasznalo"
+        android:text="Felhasználó Törlése"
+        android:textColor="@color/vilagoskek"
+        app:backgroundTint="@color/bordo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonModositasFelhasznalo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

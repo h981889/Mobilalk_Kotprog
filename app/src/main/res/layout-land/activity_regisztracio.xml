@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E2761"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".Activity.RegisztracioActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1E2761"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            tools:context=".Activity.RegisztracioActivity">
+
+            <TextView
+                android:id="@+id/textViewCimReg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/reg"
+                android:textAlignment="center"
+                android:textColor="#408EC6"
+                android:textSize="34sp" />
+
+            <EditText
+                android:id="@+id/editTextFelhasznalonevReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/felhnev"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="#1E2761"
+                android:textColorHint="#408EC6"
+                android:textColorLink="#408EC6" />
+
+            <EditText
+                android:id="@+id/editTextEmailReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="@string/emailc"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="#1E2761"
+                android:textColorHint="#408EC6"
+                android:textColorLink="#408EC6" />
+
+            <EditText
+                android:id="@+id/editTextJelszoReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="@string/jelsz"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="#1E2761"
+                android:textColorHint="#408EC6"
+                android:textColorLink="#408EC6" />
+
+            <EditText
+                android:id="@+id/editTextJelszoIsmReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="@string/jelszism"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="#1E2761"
+                android:textColorHint="#408EC6"
+                android:textColorLink="#408EC6" />
+
+            <Spinner
+                android:id="@+id/spinnerCsapatReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:entries="@array/csapat_nev_spinner"
+                android:fadingEdge="horizontal"
+                android:minHeight="48dp"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:id="@+id/buttonRegisztracioReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="#997A2048"
+                android:onClick="onClickRegisztracioReg"
+                android:text="@string/reg"
+                app:backgroundTint="#997A2048"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/buttonMegsemReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="#997A2048"
+                android:onClick="onClickMegsemReg"
+                android:text="@string/megsem"
+                app:backgroundTint="#997A2048"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

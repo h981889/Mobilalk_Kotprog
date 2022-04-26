@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E2761"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".Activity.RegisztracioActivity">
+
+    <TextView
+        android:id="@+id/textViewCimReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/alapMargin"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/reg"
+        android:textAlignment="center"
+        android:textColor="#408EC6"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textViewHibaReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/design_default_color_error"
+        android:textColorHighlight="#408EC6"
+        android:textColorLink="#408EC6"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editTextFelhasznalonevReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/alapMargin"
+        android:hint="@string/felhnev"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="#1E2761"
+        android:textColorHint="#408EC6"
+        android:textColorLink="#408EC6" />
+
+    <EditText
+        android:id="@+id/editTextEmailReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/alapMargin"
+        android:ems="10"
+        android:hint="@string/emailc"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="#1E2761"
+        android:textColorHint="#408EC6"
+        android:textColorLink="#408EC6" />
+
+    <EditText
+        android:id="@+id/editTextJelszoReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/alapMargin"
+        android:ems="10"
+        android:hint="@string/jelsz"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="#1E2761"
+        android:textColorHint="#408EC6"
+        android:textColorLink="#408EC6" />
+
+    <EditText
+        android:id="@+id/editTextJelszoIsmReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/alapMargin"
+        android:ems="10"
+        android:hint="@string/jelszism"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHighlight="#1E2761"
+        android:textColorHint="@color/vilagoskek"
+        android:textColorLink="@color/vilagoskek" />
+
+    <Spinner
+        android:id="@+id/spinnerCsapatReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/alapMargin"
+        android:fadingEdge="horizontal|vertical"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown"
+        />
+
+    <Button
+        android:id="@+id/buttonRegisztracioReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/alapMargin"
+        android:background="#997A2048"
+        android:onClick="onClickRegisztracioReg"
+        android:text="@string/reg"
+        app:backgroundTint="#997A2048"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</LinearLayout>
