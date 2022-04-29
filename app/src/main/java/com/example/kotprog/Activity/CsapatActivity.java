@@ -37,6 +37,14 @@ public class CsapatActivity extends AppCompatActivity {
         setContentView(R.layout.activity_csapat);
 
         user = FirebaseAuth.getInstance().getCurrentUser();
+
+        if(user == null)
+        {
+            Intent intent = new Intent(this, KezdolapActivity.class);
+            startActivity(intent);
+            finish();
+        }
+
         firestore = FirebaseFirestore.getInstance();
         collRef = firestore.collection("Csapat");
         recyclerView = findViewById(R.id.recViewCsapat);

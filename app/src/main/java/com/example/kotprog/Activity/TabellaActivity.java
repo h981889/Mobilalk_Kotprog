@@ -37,6 +37,14 @@ public class TabellaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tabella);
 
         user = FirebaseAuth.getInstance().getCurrentUser();
+
+        if(user == null)
+        {
+            Intent intent = new Intent(this, KezdolapActivity.class);
+            startActivity(intent);
+            finish();
+        }
+
         firestore = FirebaseFirestore.getInstance();
         collRef = firestore.collection("Tabella");
         tabellak = new ArrayList<>();

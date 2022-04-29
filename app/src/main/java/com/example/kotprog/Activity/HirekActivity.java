@@ -35,6 +35,14 @@ public class HirekActivity extends AppCompatActivity {
         setContentView(R.layout.activity_hirek);
 
         user = FirebaseAuth.getInstance().getCurrentUser();
+
+        if(user == null)
+        {
+            Intent intent = new Intent(this, KezdolapActivity.class);
+            startActivity(intent);
+            finish();
+        }
+
         firestore = FirebaseFirestore.getInstance();
         collRef = firestore.collection("Hir");
         hirek = new ArrayList<>();

@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.example.kotprog.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -31,7 +32,7 @@ public class FelhasznaloActivity extends AppCompatActivity {
 
     private EditText editTextFelh;
     private EditText editTextJelsz;
-    private static final String email = FirebaseAuth.getInstance().getCurrentUser().getEmail();
+    private String email;
     private String csapat;
 
     private Felhasznalo felhasznaloOrig;
@@ -47,12 +48,21 @@ public class FelhasznaloActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_felhasznalo);
 
+        user = FirebaseAuth.getInstance().getCurrentUser();
+
+        if(user == null)
+        {
+            Intent intent = new Intent(this, KezdolapActivity.class);
+            startActivity(intent);
+            finish();
+        }
+
         editTextFelh = findViewById(R.id.editTextFelhNevFelhasznalo);
         editTextJelsz = findViewById(R.id.editTextJelszoFelhasznalo);
 
+        email = FirebaseAuth.getInstance().getCurrentUser().getEmail();
         felhasznaloOrig = new Felhasznalo();
 
-        user = FirebaseAuth.getInstance().getCurrentUser();
         auth = FirebaseAuth.getInstance();
         firestore = FirebaseFirestore.getInstance();
         docRef = firestore.collection("Felhasznalo").document(email);
@@ -95,9 +105,12 @@ public class FelhasznaloActivity extends AppCompatActivity {
 
     public void onClickTorlesFelhasznalo(View view)
     {
+        docRef.update("felhasznalonev",editTextFelh.getText().toString());
         docRef.delete();
         user.delete();
         FirebaseAuth.getInstance().signOut();
+
+        Toast.makeText(this,"Sikeres felhasználó törlés!",Toast.LENGTH_LONG).show();
 
         Intent intent = new Intent(this, KezdolapActivity.class);
         startActivity(intent);
